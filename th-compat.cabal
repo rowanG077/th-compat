@@ -43,7 +43,7 @@ source-repository head
 library
   exposed-modules:     Language.Haskell.TH.Syntax.Compat
   build-depends:       base             >= 4.9  && < 5
-                     , template-haskell >= 2.11 && < 2.25
+                     , template-haskell >= 2.11 && < 2.26
   if !impl(ghc >= 9.4)
     build-depends:     filepath         >= 1.2.0.0 && < 1.6
                      , directory        >= 1.1.0.0 && < 1.4
@@ -61,7 +61,7 @@ test-suite spec
   build-depends:       base             >= 4.9 && < 5
                      , hspec            >= 2   && < 3
                      , mtl              >= 2.1 && < 2.4
-                     , template-haskell >= 2.5 && < 2.25
+                     , template-haskell >= 2.5 && < 2.26
                      , th-compat
   build-tool-depends:  hspec-discover:hspec-discover >= 2
   hs-source-dirs:      tests
